@@ -1,0 +1,11 @@
+{
+  "name": "vx-util",
+  "version": "0.0.1",
+  "private": false,
+  "devDependencies": {
+    "docsify-to-pdf": "^0.0.5"
+  },
+  "scripts": {
+    "pdf": "node_modules/.bin/docsify-to-pdf"
+  }
+}

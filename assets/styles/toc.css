@@ -1,0 +1,101 @@
+/* 水印 */
+.content::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/water-mark.svg");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page-cover {
+  height: 100vh;
+  max-width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  display: none;
+  font-size: 16px;
+}
+
+/* .page-cover .page-cover-logo {
+  width: 100%;
+} */
+.page-cover .page-cover-logo img {
+  height: 60px;
+}
+
+.page-cover .page-cover-title {
+  font-size: 36px; 
+  font-weight: 900;
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  text-align: center; 
+  width: 100%;
+}
+
+.page-cover .page-cover-sub-title {
+  font-size: 28px; 
+  font-weight: 900;
+  position: absolute;
+  text-align: center; 
+  top: 35%;
+  width: 100%;
+}
+
+.page-cover .page-cover-date {
+  top: 55%;
+  text-align: center; 
+  position: absolute;
+  width: 100%;
+}
+
+.page-cover .page-cover-author {
+  text-align: center; 
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
+
+.page-toc {
+  margin: 0 auto;
+  max-width: 80%;
+  display: none;
+}
+.page-toc a {
+  display: flex;
+  text-decoration: none;
+  border-bottom: 1px dashed #ccc;
+  line-height: 2em;
+  font-size: 14px;
+  color: #505d6b;
+}
+.page-toc .toc-title {
+  flex: 1;
+}
+.page-toc a.h2 {
+  margin-left: 1em;
+}
+.page-toc a.h3 {
+  margin-left: 2em;
+}
+
+@media print {
+  .content::before {
+    z-index: 1000;
+    opacity: 1;
+  }
+  .page-cover {
+    display: block;
+  }
+  .page-toc {
+    display: block;
+  }
+}

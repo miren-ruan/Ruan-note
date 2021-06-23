@@ -247,3 +247,22 @@ methods:{
 <slot name="centre"></slot>
 ```
 
+------
+
+#### 9、`Promise`
+
+**`promise`是异步编程的一种解决方案**
+
+```js
+new Promise((resolve,reject) => {
+    setTimeout(function(){
+        //resolve('hello')
+        reject('error date')
+    },1000)
+}).then(data => {
+    console.log(data);
+}, error =>{
+    console.log(error)
+})
+```
+

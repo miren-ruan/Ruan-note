@@ -2,12 +2,9 @@
 - 日常笔记
     - 基础入门
         - [HTML+CSS](doc/notes/Basics/html+CSS.md)
-        - [HTML5](doc/notes/Basics/HTML5.md)
         - [CSS3](doc/notes/Basics/CSS3.md)
         - [JavaScript](doc/notes/Basics/JavaScript.md)
-        - [BOM和DOM](doc/notes/Basics/BOM&DOM.md)
         - [Jquery](doc/notes/Basics/Jquery.md)
-        - [ES6](doc/notes/Basics/ES6.md)
     - 框架学习
         - [Vue](doc/notes/Frame/Vue.md)
         - [Vue-router](doc/notes/Frame/Vue-router.md)
@@ -39,5 +36,5 @@
         - [模板与细节](doc/interview/resume/care.md)
 - 有待学习
     - [study](doc/study/more.md)
-    <!-- - [アニメ](doc/study/comic.md) -->
+    - [アニメ](doc/study/comic.md)
     - 

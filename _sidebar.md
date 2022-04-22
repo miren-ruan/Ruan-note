@@ -29,8 +29,10 @@
         - [html+css](doc/interview/technology/formalCSS.md)
         - [JavaScript](doc/interview/technology/JavaScript.md)
         - [Vue](doc/interview/technology/Vue.md)
-        - [项目优化](doc/interview/technology/optimization.md)
-        - [问题处理](doc/interview/technology/questions.md)
+        - [Git](doc/interview/technology/git.md)
+        - [算法](doc/interview/technology/suan.md)
+        - [计算机网络](doc/interview/technology/internet.md)
+        - [webpack](doc/interview/technology/webpack.md)
     - 人事
         - [常见问题](doc/interview/personal/Questions.md)
     - 简历注意事项

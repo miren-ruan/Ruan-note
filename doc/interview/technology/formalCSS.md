@@ -21,7 +21,22 @@
 
 ------
 
-#### 3、
+#### 3、`clientHeight`、`offsetHeight`、`scrollHeight`有什么区别?
 
+**clientHeight**：用户可见内部高度+padding
 
+**offsetHeight**：总高度，算上滚动条
 
+**scrollHeight**：可滚动高度的+padding
+
+**scrollTop**：当前元素距离顶部的距离
+
+触底加载：scrollTop + clientHeight >= scrollHeight - 50px
+
+------
+
+#### 4、BOM和DOM的区别？
+
+BOM：就是window，包含windows(窗口)、navigator（浏览器）、screen（浏览器屏幕）、history（访问历史）、location（地址）等，浏览器相关的东西，bom是包含dom的
+
+DOM：就是document，html相关的都在里面

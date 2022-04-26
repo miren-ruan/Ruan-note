@@ -1,24 +1,29 @@
-//当拷贝时复制的是引用地址，而不是堆里面的值，这就是浅拷贝
-//当在堆中开辟出一块内存用来存放复制来的值，就是深拷贝
+//深拷贝：要另外开辟一个内存地址，内容和原来的一样，更改原来的对象，拷贝的对象不会发生变化
 
-function deepClone(obj) {
-    //不是对象或者为空
-    if (typeof obj !== 'object' || obj == null) {
-        return obj
-    }
-    let result
-    if (obj instanceof Array) {
-        result = []
-    } else {
-        result = {}
-    }
-    //循环将obj里的东西赋值给result
-    for (let key in obj) {
-        //这个方法可以用来检测一个对象是否含有特定的自身属性,会忽略掉那些从原型链上继承到的属性
-        if (obj.hasOwnProperty(key)) {
-            //可能存在多层值,所以要用递归
-            result[key] = deepClone(obj[key])
+//方式1，对象如果只有一层，可以使用Object.assign()
+
+//方式2，转成JSON再转回来
+function cloneJson(o) {
+    return JSON.parse(JSON.stringify(o))
+}
+//缺点：1. 它会抛弃对象的constructor。也就是深拷贝之后，不管这个对象原来的构造函数是什么，在深拷贝之后都会变成Object
+//2. Date对象, RegExp对象, Error对象等是无法通过这种方式深拷贝。这种方法能正确处理的对象只有 Number, String, Boolean, Array, 扁平对象
+//3. 如果原对象中有值为undefined的情况, JSON.stringify 后会丢失
+
+
+//方式3
+function deepClone3(o, hash = new map()) {
+    if (!isObject(o)) return o//检测是否为对象或者数组
+    if (hash.has(o)) return hash.get(o)
+    let obj = Array.isArray(o) ? [] : {}
+
+    hash.set(o, obj)
+    for (let i in o) {
+        if (isObject(o[i])) {
+            obj[i] = deepClone3(o[i], hash)
+        } else {
+            obj[i] = o[i]
         }
     }
-    return result
+    return obj
 }

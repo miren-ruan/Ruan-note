@@ -1,6 +1,6 @@
 #### **1、JavaScript中什么是基本数据类型？什么是引用数据类型？数据类型如何进行存储的？**
 
-基本数据类型有：`Number,String,Boolean,Null,Undefined,Symbol(ES6新增),bigInt`
+基本数据类型有：`Number,String,Boolean,Null,Undefined,Symbol(ES6新增，表示独一无二的值),bigInt`
 
 引用数据类型有：`Object,Array,Date,Function,RegExp`
 

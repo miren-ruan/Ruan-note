@@ -12,3 +12,18 @@
 - git push：将本地代码提交到远程
 - git log：查看当前提交的日志
 - git reset commit：回滚操作
+
+------
+
+#### 2、git中`rebase`和`merge`的区别？
+
+都是合并分支的操作，rebase不会产生额外的commit，merge会重新创建一个commit保存起来，比较臃肿
+
+------
+
+#### 3、git fetch 和 git pull 的区别？
+
+`git fetch`：把远程代码拉下来但是不会合并
+
+`git pull`：会自动合并
+

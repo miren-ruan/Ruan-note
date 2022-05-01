@@ -33,8 +33,6 @@
         - [ES6](doc/interview/technology/ES6.md)
     - 人事
         - [常见问题](doc/interview/personal/Questions.md)
-    - 简历注意事项
-        - [模板与细节](doc/interview/resume/care.md)
 - 有待学习
     - [study](doc/study/more.md)
     - [アニメ](doc/study/comic.md)

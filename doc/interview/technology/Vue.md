@@ -27,14 +27,19 @@ watch: {
 
 解释：在下次DOM更新循环结束之后执行延迟回掉，在修改数据后立即使用这个方法，获取更新后的DOM
 
+简单理解：当数据更新了，在DOM中渲染后，自动执行该函数
+
 应用：
 
 - 想要在Vue生命周期函数中的`created()`操作DOM可以使用`Vue.nextTick()`回调函数
-- 在数据改变后要执行的操作，而这个操作需要等数据改变后而改变DOM结构的时候才进行操作，需要用到`nextTick`
+
+原因：在`created()`钩子函数执行的时候DOM 其实并未进行任何渲染，而此时进行DOM操作无异于徒劳
+
+- 更改数据后当你想立即使用js操作新的视图的时候需要使用它
 
 ------
 
-#### **4、阐述一下你理解的MVVM响应式原理？**
+#### **4、阐述一下你理解的双向绑定原理？**
 
 vue是采用数据劫持配合发布者-订阅者的模式的方式，通过`Object.defineProperty()`来劫持各个属性的`getter`和`setter`，在数据变动时，发布消息给依赖收集器，去通知（notify）观察者，做出对应的回调函数，去更新视图；
 
@@ -45,12 +50,19 @@ MVVM作为绑定的入口，整合`Observer`,`Compile`和`Watcher`三者，通�
 #### **5、说说vue的生命周期？**
 
 **beforeCreate**：创建之前，此时还没有`data`和`Method`；可以在这加loading事件，加载实例时触发；
+
 **created**：创建完成，此时`data`和`Method`可以使用了，在`Created`之后`beforeMount`之前如果没有el选项的话那么此时生命周期结束，停止编译，如果有则继续；初始化完成时的事件可以写在这里；
+
 **beforeMount**：载入前，在渲染之前；
+
 **mounted**：载入后，页面已经渲染完成，并且`vm`实例中已经添加完`$el`了，已经替换掉那些DOM元素了（双括号中的变量），这个时候可以操作DOM了（但是是获取不了元素的高度等属性的，如果想要获取，需要使用`nextTick()`）
+
 **beforeUpdate**：data改变后，对应的组件重新渲染之前；
+
 **updated**：data改变后，对应的组件重新渲染完成；
+
 **beforeDestory**：在实例销毁之前，此时实例仍然可以使用；
+
 **destoryed**：实例销毁后；
 
 ------
@@ -93,7 +105,7 @@ diff算法就是比较新旧两个虚拟DOM差异的一种算法
 - h函数：在render函数内运行，在created和beforeMount之间执行，生成虚拟DOM；
 - patch函数：diff从这开始，用于比较两个虚拟DOM的根节点；
 - patchVnode函数：用于比较两个相同节点的子级；
-- updateChldren函数：比较新旧两个vnode的子节点；
+- updateChlidren函数：比较新旧两个vnode的子节点；
 
 **diff比较规则：**
 

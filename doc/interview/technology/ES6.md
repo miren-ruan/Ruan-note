@@ -49,17 +49,17 @@ let result = [...arr1 , ...arr2];
 
 #### 4、了解哪些字符串方法？
 
-- startsWith()：判断字符串是否以 XX 开头
-- endsWith()：判断字符串是否以 XX 结尾
-- includes()：判断字符串中是否包含XX
-- repeat()：拷贝n份
-- padStart()/padEnd()：头部或尾部补全，有两个参数，第一个表示字符串最小长度，第二个是用来补全的字符串
+- `startsWith()`：判断字符串是否以 XX 开头
+- `endsWith()`：判断字符串是否以 XX 结尾
+- `includes()`：判断字符串中是否包含XX
+- `repeat()`：拷贝n份
+- `padStart()/padEnd()`：头部或尾部补全，有两个参数，第一个表示字符串最小长度，第二个是用来补全的字符串
 
 ------
 
 #### 5、了解哪些ES6的数组方法？
 
-- forEach()
+- `forEach()`
 
 ```js
 arr.forEach(function(value,index,array){
@@ -69,18 +69,18 @@ arr.forEach(function(value,index,array){
 })
 ```
 
-- filter()：过滤，返回符合条件的新数组
-- some()：检测数组是否存在满足指定条件的项，返回值为布尔值，找到则返回true，并终止遍历
-- map()：类似于foreEach()，但会返回新数组
-- every()：遍历，只要有一项不满足条件，就返回false
+- `filter()`：过滤，返回符合条件的新数组
+- `some()`：检测数组是否存在满足指定条件的项，返回值为布尔值，找到则返回true，并终止遍历
+- `map()`：类似于foreEach()，但会返回新数组
+- `every()`：遍历，只要有一项不满足条件，就返回false
 
 ------
 
 #### 6、`find`和`findIndex`有了解吗？
 
-##### find()：返回数组中符合测试函数的第一个元素的值，没有则返回`undefined`
+##### `find()`：返回数组中符合测试函数的第一个元素的值，没有则返回`undefined`
 
-##### findIndex()：返回数组中符合测试函数的第一个元素的索引，没有则返回`-1`
+##### `findIndex()`：返回数组中符合测试函数的第一个元素的索引，没有则返回`-1`
 
 ------
 

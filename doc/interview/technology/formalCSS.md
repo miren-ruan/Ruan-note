@@ -128,3 +128,57 @@ DOM事件流三个阶段：捕获阶段、目标阶段、冒泡阶段
 - class、伪类、属性（10）
 - 标签，伪元素（1）
 
+------
+
+#### 12、css水平、垂直居中有哪些写法？
+
+**水平居中：**
+
+> 行内元素：`text-align:center;`
+>
+> 块级元素：`margin:0 auto;`
+>
+> `position:absolute;` +`left:50%;`+ `transform:translateX(-50%);`
+>
+> `display:flex;`+ `justify-content: center;`
+
+**垂直居中：**
+
+> 设置`line-height` 等于`height`
+>
+> `position:absolute;` +`top:50%;`+ `transform:translateY(-50%);`
+>
+> `display:flex;` + `align-items: center;`
+
+------
+
+#### 13、对Flex有哪些了解？
+
+**容器的属性：**
+
+```css
+flex-direction: row | row-reverse | column | column-reverse;//沿主轴方向排列
+flex-wrap: nowrap | wrap | wrap-reverse; //用来设置轴线满了是否换行
+justify-content: flex-start | flex-end | center | space-between | space-around;
+//项目在主轴上的排列方式
+align-items: flex-start | flex-end | center | baseline | stretch;
+//项目在交叉轴上的对齐方式
+align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+//多根轴线的对齐方式
+```
+
+**子元素item的属性：**
+
+```css
+order: <integer>; //定义项目的排列顺序,数值越小，排列越靠前，默认为0
+flex-grow: <number>; //定义项目的放大比例，默认为0，如果存在剩余空间，也不放大
+flex-shrink: <number>; //定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小
+flex-basis: <length> | auto; //定义了在分配多余空间之前，项目占据的主轴空间
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+//表示继承父元素的 align- items属性
+```
+
+详情参考阮一峰老师的[Flex布局教程](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
+
+

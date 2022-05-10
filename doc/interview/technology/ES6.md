@@ -97,3 +97,14 @@ arr.forEach(function(value,index,array){
 > 3、解决了代码的可读性问题
 >
 > 4、在异步执行的流程中，将执行代码和处理结果的代码清晰的分离了
+
+------
+
+#### 8、对async/await有了解吗？使用时要注意什么？
+
+- `async` 作为一个关键字放到函数的前面，表示函数是一个异步函数，该函数的执行不会阻塞后面代码的执行
+- `async`声明的函数的返回本质上是一个`Promise`，`async`函数内部会返回一个`Promise`对象，`then`方法回调函数的参数
+- `async` 函数内部的实现原理是`resolved`，如果函数内部抛出错误， 则会导致返回的 `Promise` 对象状态变为 `reject` 状态，`promise` 对象有一个`catch` 方法进行捕获，被 `catch` 方法回调函数接收到
+
+注意点：`await` 命令后面的`Promise`对象，运行结果可能是 `rejected`，此时等同于 `async` 函数返回的 `Promise` 对象被`reject`。因此需要加上错误处理，可以给每个 `await` 后的 `Promise` 增加 `catch` 方法；也可以将 `await` 的代码放在 `try…catch` 中
+

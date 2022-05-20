@@ -35,5 +35,5 @@
         - [常见问题](doc/interview/personal/Questions.md)
 - 有待学习
     - [study](doc/study/more.md)
-    <!-- - [アニメ](doc/study/comic.md) -->
+    - [アニメ](doc/study/comic.md)
     - 

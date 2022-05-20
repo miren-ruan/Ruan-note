@@ -180,5 +180,31 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
 
 详情参考阮一峰老师的[Flex布局教程](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
+------
 
+#### 14、如何使屏幕自适应？
+
+1. 使用Flex布局；
+2. 宽高避免写死，可以按比例、百分比去设置宽高；
+3. 使用滚动，进行上下左右滚动；
+4. 使用rem，具体可以获取当前显示器的屏幕宽高，与一个标准值进行对比，其对比的值，就是rem的值
+
+```javascript
+//以设计图1920*1080px举例
+function setRem() {
+  // 默认使用100px作为基准大小
+  const baseSize = 100;
+  const baseVal = baseSize / 1920;
+  const vW = window.innerWidth; // 当前窗口的宽度
+  const rem = vW * baseVal; // 以默认比例值乘以当前窗口宽度,得到该宽度下的相应font-size值
+  window.$size = rem / 100;
+  document.documentElement.style.fontSize = rem + "px";
+}
+// 初始化
+setRem();
+// 窗口大小变化时重置 rem
+window.onresize = function() {
+  setRem();
+};
+```
 

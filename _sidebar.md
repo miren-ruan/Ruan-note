@@ -5,22 +5,22 @@
         - [CSS3](doc/notes/Basics/CSS3.md)
         - [JavaScript](doc/notes/Basics/JavaScript.md)
         - [Jquery](doc/notes/Basics/Jquery.md)
-    - 框架学习
+    - 更多学习
         - [Vue](doc/notes/Frame/Vue.md)
         - [Vue-router](doc/notes/Frame/Vue-router.md)
         - [VueX](doc/notes/Frame/VueX.md)
-        - [axios](doc/notes/Frame/axios.md)
         - [uni-app](doc/notes/Frame/uni-app.md)
-        - [小程序](doc/notes/Frame/WeChat.md)
         - [React](doc/notes/Frame/React.md)
-    - 更多了解
-        - [TypeScript](doc/notes/More/TypeScript.md)
-        - [webpack](doc/notes/More/webpack.md)
-        - [node.js](doc/notes/More/node.js.md)
-        - [计算机网络](doc/notes/More/Internet.md)
-        - [SVN](doc/notes/More/SVN.md)
-        - [Git](doc/notes/More/Git.md)
-        - [数据结构与算法](doc/notes/More/algorithm.md)
+        - [TypeScript](doc/notes/Frame/TypeScript.md)
+        - [webpack](doc/notes/Frame/webpack.md)
+        - [node.js](doc/notes/Frame/node.js.md)
+        - [计算机网络](doc/notes/Frame/Internet.md)
+        - [Git](doc/notes/Frame/Git.md)
+        - [数据结构与算法](doc/notes/Frame/algorithm.md)
+    - 日常随笔
+        - [001.vue3为什么性能高于vue2](doc/notes/More/vue3.md)
+        
+       
 - 面试题
     - 技术
         - [html+css](doc/interview/technology/formalCSS.md)
@@ -31,9 +31,7 @@
         - [计算机网络](doc/interview/technology/internet.md)
         - [webpack](doc/interview/technology/webpack.md)
         - [ES6](doc/interview/technology/ES6.md)
-    - 人事
-        - [常见问题](doc/interview/personal/Questions.md)
 - 有待学习
     - [study](doc/study/more.md)
-    - [アニメ](doc/study/comic.md)
-    - 
+    <!-- - [アニメ](doc/study/comic.md) -->
+    

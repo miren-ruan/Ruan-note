@@ -1,4 +1,5 @@
 <h2 align="center" style='padding:10px 0 20px 0;'>🚀vue2到vue3，到底发生了什么？</h2>
+<img src="assets/images/vue3.PNG" align='center'/>
 
 #### 1、虚拟dom优化
 

@@ -52,11 +52,10 @@
       var now = `${nowDate.getFullYear()}年${nowDate.getMonth()+1}月`;
       config.date = now;
     }
-    if(!config.author) config.author = "北京科蓝软件系统股份有限公司";
+    if(!config.author) config.author = "迷人软";
     var converPage = document.createElement('div');
     converPage.className = "page-cover";
     converPage.innerHTML = "<div class=\"page-cover-logo\">"
-    + "<img src=\"/assets/images/csii-logo.png\" /></div>"
     + "<div class=\"page-cover-title\">" + config.title + "</div>"
     + "<div class=\"page-cover-sub-title\">" + config.subTitle + "</div>"
     + "<div class=\"page-cover-date\">" + config.date + "</div>"

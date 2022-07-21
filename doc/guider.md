@@ -1,1 +1,4 @@
-<h4 align='center' style='font-weight:800;'>主要用来记录在前端开发的学习和工作中遇到的问题以及一些笔记和心得</h4>
+<h4 align='center' style='font-weight:800;'>人活着本就没什么意义；</h4>
+<h4 align='center' style='font-weight:800;'>但是活下去，才能找到有趣的事物；</h4>
+<h4 align='center' style='font-weight:800;'>就像你找到了这朵花；</h4>
+<h4 align='center' style='font-weight:800;'>就像我找到了这个你.</h4>

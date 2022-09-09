@@ -19,6 +19,6 @@
 
 
 
-Copyright (c) 2022+ 中二少年迷人软
+Copyright (c) 2022+ 周旋久
 
 

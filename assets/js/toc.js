@@ -52,7 +52,7 @@
       var now = `${nowDate.getFullYear()}年${nowDate.getMonth()+1}月`;
       config.date = now;
     }
-    if(!config.author) config.author = "迷人软";
+    if(!config.author) config.author = "周旋九";
     var converPage = document.createElement('div');
     converPage.className = "page-cover";
     converPage.innerHTML = "<div class=\"page-cover-logo\">"

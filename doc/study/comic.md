@@ -234,6 +234,8 @@
 
 081.盾之勇者成名录
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盾之勇者成名录    第二季
+
 082.进击的巨人
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进击的巨人    第二季
@@ -297,5 +299,11 @@
 102.家有女友
 
 103.约会大作战
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;约会大作战    第二季
+
+104.夏日重现
+
+105.未来日记
 
 ​                
